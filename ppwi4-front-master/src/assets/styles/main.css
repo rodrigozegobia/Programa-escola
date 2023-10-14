@@ -1,0 +1,236 @@
+main{
+    display: flex; /* segura o footer lá embaixo*/
+}
+
+main article{
+    background-color: floralwhite;
+    height: 1200px;
+}
+
+.app-toggle{
+    position: absolute;
+    margin-left: 10em;
+    top: 0.75em;
+    font-size: 23px;
+    color: #FFF;
+    cursor: pointer;
+    display: flex;
+}
+
+.app-toggle:focus, .app-toggle:hover{
+    color: #00635a;
+    text-decoration: none;
+}
+
+.app-profile{
+    position: absolute;
+    right: 50px;
+    display: flex;
+    font-weight: 900;
+    font-size: 15px;
+    top: 13px;
+}
+
+.app-profile img{
+    top: 5px;
+    height: 100%;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.app-profile span{
+    margin-top: 5px;
+    margin-left: 10px;
+    padding-right: 10px;
+}
+
+.app-logout{
+    margin-top: 0px;
+    margin-left: 15px;
+    color: #FFF;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Content configuration - Content > Layout */
+
+.app-content{
+    flex-direction: row;
+    display: flex;
+    min-height: 90vh;
+    margin-left: 220px;
+    background-color: #E5E5E5;
+    transition: 0.5s;
+    transition-property: left;
+    overflow: none;
+}
+
+.app-content.inactive{
+    margin-left: 0;
+}
+
+.app-window{
+    position: relative;
+    background: #FFF;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Table configurations */
+
+.app-table{
+    width: 100%;
+}
+
+.app-table{
+    color: blue;
+}
+
+.app-table-header{
+    font-weight: bold;
+    text-align: center;
+}
+
+.app-table-column-center-detail{
+    text-align: center;
+}
+
+/* Image configurations */
+
+.img-avatar{
+    border: 1px solid #dee2e6;
+    max-width: 100%;
+    border-radius: 50%;
+    justify-content: center;
+    display: block;
+    margin: auto;
+}
+
+/* ShowMessage configurations */
+.app-title-system{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-align: justify;
+    justify-content: space-between;
+    -webkit-box-pack: horizontal;
+    -ms-flex-align: row;
+    flex-direction: row;
+    background-color: #FFF;
+
+}
+
+.app-title-system h3{
+    margin: 0;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.app-title-system p{
+    margin-bottom: 0;
+    font-style: italic;
+}
+
+/* Sidebar configurations */
+
+.app-sidebar{
+    z-index: 1;
+    top: 0;
+    background: #2f323a;
+    margin-top: 50px;
+    position: fixed;
+    left: 0;
+    min-width: 14em;
+    max-width: 14em;
+    height: 100vh;
+    transition: 0.5s;
+    transition-property: left;
+    overflow: none;
+}
+
+.app-sidebar ul{
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 0 0 5px;
+}
+
+.app-sidebar li{
+    list-style-type: none;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.app-sidebar ul li a{
+    display: flex;
+    align-items: center;
+    color: #FFF;
+    text-decoration: none;
+    border-radius: 12px;
+    white-space: nowrap;
+    transition: all 0.5s ease;
+}
+
+.app-sidebar ul li a:hover{
+    color: #5699fd;
+    background-color: black;
+}
+
+.app-sidebar ul li a i{
+    min-width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.app-sidebar.inactive{
+    margin-left: -14em;
+}
+
+/*  */
+
+.fileInput{
+    position: relative;
+    margin-bottom: 1.5em;
+}
+
+.fileInput input{
+    position: relative;
+    text-align: right;
+    opacity: 0;
+    z-index: 2;
+    cursor: pointer;
+    height: 60px;
+    max-width: 100%;
+}
+
+.fileInput .uploadFile{
+    position: absolute;
+    top: 0;
+    left: auto;
+    width: 100%;
+    height: 70%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding: 1em;
+    transition: background-color 0.4s;
+    box-shadow: 0 8px 24px rgba(149, 157, 165, 0.5);
+}
